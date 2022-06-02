@@ -44,7 +44,6 @@
 
 
 - Intellij
-- Jira
 - github
 
 
