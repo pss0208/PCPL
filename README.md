@@ -1,8 +1,8 @@
-# Page27 clone Project
+# 🏠 Page27 clone Project
  교육용으로 제작한 page27 클론코딩 프로젝트<br>
  
 
-## ✔️ Part 
+## 👋 Part 
 
 - 프론트 : 박준원, 채기웅
 - 백엔드 : 박상순, 이현도
@@ -24,7 +24,7 @@
 
 - html
 - CSS
-- JavaScript(jQuery)
+- JavaScript(jQuery, Ajax)
 - Thymeleaf
 
 
@@ -83,22 +83,27 @@
 <img src="src/main/webapp/resources/image/order2.PNG" width=500>
 
 
-
-## 기획 설계
-
-- ### 사전 설계
-<img src="src/main/webapp/resources/image/pre_design1.PNG" width=400><img src="src/main/webapp/resources/image/pre_design2.PNG" width=400>
-<img src="src/main/webapp/resources/image/pre_design3.PNG" width=400><img src="src/main/webapp/resources/image/pre_design4.PNG" width=400>
-
-
-- ### ERD
-<img src="src/main/webapp/resources/image/erd.PNG" width=500>
-
 </details>
 
-## ✔️ 문제 발생 및 해결
+## ✔️ 문제 및 해결
 
 <details markdown="1">
 <summary>문제 및 해결</summary>
+
+- ## 문제 : 웹 크롤링 코드가 한번씩 돌리도록 구성이 되어있어서 너무 많은 시간이 소요됨
+- ## 해결 : for문과 switch-case문을 사용하여 각 카테고리별로 한번에 처리되도록 구성
+
+<img src="src/main/webapp/resources/image/webcrawling_for.PNG" width=500>
+<br><br>
+
+- ## 문제 : 
+
+<img src="src/main/webapp/resources/image/error.PNG" width=500>
+<br>
+
+- ## 원인 : 크롤링해오는 값이 없을 경우 null로 들어가지 않고 뒤에 텍스트까지 같이 크롤링을 해서 저장범위를 넘어감
+- ## 해결 : if문으로 값이 있는 경우에만 크롤링하게 함
+
+<img src="src/main/webapp/resources/image/solution.PNG" width=500>
 
 </details>
