@@ -90,20 +90,20 @@
 <details markdown="1">
 <summary>문제 및 해결</summary>
 
-- ## 문제 : 웹 크롤링 코드가 한번씩 돌리도록 구성이 되어있어서 너무 많은 시간이 소요됨
-- ## 해결 : for문과 switch-case문을 사용하여 각 카테고리별로 한번에 처리되도록 구성
+- ### 문제 : 웹 크롤링 코드가 한번씩 돌리도록 구성이 되어있어서 너무 많은 시간이 소요됨
+- ### 해결 : for문과 switch-case문을 사용하여 각 카테고리별로 한번에 처리되도록 구성
 
-<img src="src/main/webapp/resources/image/webcrawling_for.PNG" width=500>
+<img src="src/main/resources/static/image/etc/webcrawling_for.PNG" width=500>
 <br><br>
 
-- ## 문제 : 
+- ### 문제 : 
 
-<img src="src/main/webapp/resources/image/error.PNG" width=500>
+<img src="src/main/resources/static/image/etc/error.PNG" width=500>
 <br>
 
-- ## 원인 : 크롤링해오는 값이 없을 경우 null로 들어가지 않고 뒤에 텍스트까지 같이 크롤링을 해서 저장범위를 넘어감
-- ## 해결 : if문으로 값이 있는 경우에만 크롤링하게 함
+- ### 원인 : 크롤링해오는 값이 없을 경우 null로 들어가지 않고 뒤에 텍스트까지 같이 크롤링을 해서 저장범위를 넘어감
+- ### 해결 : if문으로 값이 있는 경우에만 크롤링하게 함
 
-<img src="src/main/webapp/resources/image/solution.PNG" width=500>
+<img src="src/main/resources/static/image/etc/solution.PNG" width=500>
 
 </details>
