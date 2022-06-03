@@ -102,7 +102,7 @@
 <br>
 
 - ### 원인 : 크롤링해오는 값이 없을 경우 null로 들어가지 않고 뒤에 텍스트까지 같이 크롤링을 해서 저장범위를 넘어감
-- ### 해결 : if문으로 값이 있는 경우에만 크롤링하게 함
+- ### 해결 : if문으로 값이 있는 경우에만 크롤링하도록 처리
 
 <img src="src/main/resources/static/image/etc/solution.PNG" width=500>
 
