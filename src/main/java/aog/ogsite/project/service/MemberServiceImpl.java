@@ -173,7 +173,7 @@ public class MemberServiceImpl implements UserDetailsService, MemberService {
         Member userEntity = userEntityWrapper.get();
         List<GrantedAuthority> authorities = new ArrayList<>();
 
-        if (("admin@example.com").equals(loginId)) {
+        if (("admin").equals(loginId)) {
             authorities.add(new SimpleGrantedAuthority(MemberGrade.ADMIN.getValue()));
             userEntity.setMemberGrade(MemberGrade.ADMIN);
         } else {
