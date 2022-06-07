@@ -58,65 +58,98 @@
 
 
 ### 메인 화면
+🔍 메인 화면
 - 주요 상품들로 carousel 구성하여 일정 시간마다 움직이도록 구현
 - 상품 사진 클릭 시 해당 상품의 상세 페이지로 이동<br>
-<img src="src/main/resources/static/image/etc/main.PNG" width=500><br><br>
+<img src="src/main/resources/static/image/etc/main.PNG" width=500><br>
+
+🔍 세일 판매
+- 상품 이름에 'SALE'가 들어가는 상품만 나오도록 설정
+<img src="src/main/resources/static/image/etc/sale.PNG" width=500><br><br>
 
 ### 회원가입 / 로그인
 🔍 회원가입
 <br>
 <img src="src/main/resources/static/image/etc/signup.PNG" width=500><br>
 
-- Ajax를 사용한 ID 중복확인 기능<br>
-<img src="src/main/resources/static/image/etc/ajax.PNG" width=300><br>
+- ID 중복확인 기능(Ajax)<br>
+<img src="src/main/resources/static/image/etc/login_ajax.PNG" width=300><br>
 <img src="src/main/resources/static/image/etc/check_id.PNG" width=500><br>
 
 🔍 로그인
 - Spring Security 적용<br>
 <img src="src/main/resources/static/image/etc/login.PNG" width=400><br><br>
 
-### 관리자 페이지
-- ID를 "admin"으로 로그인 시 관리자로 넘어가도록 설정
+### 관리자 기능
+- ID를 'admin'으로 로그인 시 관리자로 넘어가도록 설정<br>
 <img src="src/main/resources/static/image/etc/admin_login.PNG" width=500><br>
 
-- "admin"이 아닌 다른 ID로 로그인 후 관리자 페이지 접근 시 접근 제한
+- 'admin'이 아닌 다른 ID로 로그인 후 관리자 페이지 접근 시 접근 제한<br>
 <img src="src/main/resources/static/image/etc/permission_denied.PNG" width=500><br>
 
 🔍 관리자 메인화면
-- 누적 방문자 수 및 상품, 주문, 회원 현황 요약 출력
+- 누적 방문자 수 및 상품, 주문, 회원 현황 요약 출력<br>
 <img src="src/main/resources/static/image/etc/admin_main1.PNG" width=400>
 <img src="src/main/resources/static/image/etc/admin_main2.PNG" width=400><br><br>
 
-### 관리자 상품 관리
 🔍 상품 등록
-- Querydsl을 통한 상품 정보 저장
-- commons-io 라이브러리를 이용한 이미지 파일 업로드
+- 상품 정보 저장(Querydsl)
+- 이미지 파일 업로드(commons-io 라이브러리)<br>
 <img src="src/main/resources/static/image/etc/admin_additem.PNG" width=500><br>
 
 🔍 상품 목록
-- Querydsl을 통한 동적 검색 기능<br>
+- 동적 검색 기능(Querydsl)<br>
 <img src="src/main/resources/static/image/etc/admin_itemlist.PNG" width=500><br>
 
 - 상품 상태 변경(판매, 품절) 및 삭제<br>
 <img src="src/main/resources/static/image/etc/admin_change_itemstatus.PNG" width=500><br><br>
 
-### 관리자 주문 관리
-- Querydsl을 통한 동적 검색 기능<br>
+🔍 관리자 주문 관리
+- 동적 검색 기능(Querydsl)<br>
 <img src="src/main/resources/static/image/etc/admin_order.PNG" width=500><br><br>
 
-- ### 관리자 페이지
-<img src="src/main/resources/static/image/etc/adminpage.PNG" width=500>
+### 회원 기능
+🔍 마이페이지
+- 잔여 마일리지 확인, 주문상태 확인
+- 주문목록, 정보수정, 마일리지, 배송지 목록 페이지로 이동 가능한 링크 제공<br>
+<img src="src/main/resources/static/image/etc/mypage.PNG" width=500><br>
 
-- ### 자동 완성 기능 
-<img src="src/main/resources/static/image/etc/autosearch.PNG" width=500>
+🔍 정보 수정
+- 회원 정보 수정 및 회원 탈퇴(Ajax)
+<img src="src/main/resources/static/image/etc/member_withdraw_ajax.PNG" width=500><br>
+<img src="src/main/resources/static/image/etc/modify_info_member.PNG" width=500><br>
 
-- ### 장바구니
-<img src="src/main/resources/static/image/etc/putbasket.PNG" width=500>
-<img src="src/main/resources/static/image/etc/basketpage.PNG" width=500>
+🔍 주문 조회
+- 동적 검색 기능(Querydsl), 데이터 조회(Paging)<br>
+<img src="src/main/resources/static/image/etc/search_order.PNG" width=500><br>
 
-- ### 주문 기능
-<img src="src/main/resources/static/image/etc/order1.PNG" width=500>
-<img src="src/main/resources/static/image/etc/order2.PNG" width=500>
+- 주문 취소 / 교환 / 반품 등 주문한 상품의 상태 변경(Ajax)<br>
+<img src="src/main/resources/static/image/etc/order_ajax.PNG" width=500><br><br>
+
+### 장바구니 기능
+🔍 장바구니 화면
+- 상품 수량 변경 및 삭제 기능(Ajax)
+<img src="src/main/resources/static/image/etc/basket_changequantity_ajax.PNG" width=500><br>
+<img src="src/main/resources/static/image/etc/basket_delete_ajax.PNG" width=500><br>
+
+- 선택 상품 주문 -> 선택된 상품을 결제 페이지로 이동
+- 전체 상품 주문 -> 장바구니에 있는 모든 상품을 결제 페이지로 이동
+- 각 상품의 주문 버튼 -> 해당 상품만 결제 페이지로 이동
+<img src="src/main/resources/static/image/etc/basket.PNG" width=500><br><br>
+
+### 주문 기능
+🔍 주문 화면<br>
+<img src="src/main/resources/static/image/etc/order.PNG" width=500><br>
+
+🔍 주소 검색<br>
+- daum 우편번호 검색 api 적용
+<img src="src/main/resources/static/image/etc/order_address.PNG" width=500><br>
+
+🔍 주문 완료<br>
+- 적립 예정 마일리지, 결제 금액 및 배송정보 확인
+<img src="src/main/resources/static/image/etc/order_complete.PNG" width=500><br><br>
+
+
 
 
 </details>
