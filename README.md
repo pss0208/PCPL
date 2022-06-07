@@ -115,7 +115,7 @@
 <img src="src/main/resources/static/image/etc/mypage.PNG" width=500><br>
 
 🔍 정보 수정
-- 회원 정보 수정 및 회원 탈퇴(Ajax)
+- 회원 정보 수정 및 회원 탈퇴(Ajax)<br>
 <img src="src/main/resources/static/image/etc/member_withdraw_ajax.PNG" width=500><br>
 <img src="src/main/resources/static/image/etc/modify_info_member.PNG" width=500><br>
 
@@ -128,25 +128,25 @@
 
 ### 장바구니 기능
 🔍 장바구니 화면
-- 상품 수량 변경 및 삭제 기능(Ajax)
+- 상품 수량 변경 및 삭제 기능(Ajax)<br>
 <img src="src/main/resources/static/image/etc/basket_changequantity_ajax.PNG" width=500><br>
 <img src="src/main/resources/static/image/etc/basket_delete_ajax.PNG" width=500><br>
 
 - 선택 상품 주문 -> 선택된 상품을 결제 페이지로 이동
 - 전체 상품 주문 -> 장바구니에 있는 모든 상품을 결제 페이지로 이동
-- 각 상품의 주문 버튼 -> 해당 상품만 결제 페이지로 이동
+- 각 상품의 주문 버튼 -> 해당 상품만 결제 페이지로 이동<br>
 <img src="src/main/resources/static/image/etc/basket.PNG" width=500><br><br>
 
 ### 주문 기능
 🔍 주문 화면<br>
 <img src="src/main/resources/static/image/etc/order.PNG" width=500><br>
 
-🔍 주소 검색<br>
-- daum 우편번호 검색 api 적용
+🔍 주소 검색
+- daum 우편번호 검색 api 적용<br>
 <img src="src/main/resources/static/image/etc/order_address.PNG" width=500><br>
 
-🔍 주문 완료<br>
-- 적립 예정 마일리지, 결제 금액 및 배송정보 확인
+🔍 주문 완료
+- 적립 예정 마일리지, 결제 금액 및 배송정보 확인<br>
 <img src="src/main/resources/static/image/etc/order_complete.PNG" width=500><br><br>
 
 
