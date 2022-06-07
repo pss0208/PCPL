@@ -55,63 +55,67 @@
 
 <details markdown="1">
 <summary>서비스 및 기능</summary>
-🔍🔍🔍🔍🔍🔍🔍
+
 
 - ### 메인 화면
-
+- 주요 상품들로 carousel 구성하여 일정 시간마다 움직이도록 구현
+- 상품 사진 클릭 시 해당 상품의 상세 페이지로 이동
 <img src="src/main/resources/static/image/etc/main.PNG" width=500><br><br>
 
 - ### 회원가입 / 로그인
 🔍 회원가입
-<img src="src/main/webapp/resources/image/signup.PNG" width=500><br>
+<img src="src/main/resources/static/image/etc/signup.PNG" width=500><br>
 
 - Ajax를 사용한 ID 중복확인 기능
-<img src="src/main/webapp/resources/image/ajax.PNG" width=500><br>
-<img src="src/main/webapp/resources/image/check_id.PNG" width=500><br>
+<img src="src/main/resources/static/image/etc/ajax.PNG" width=500><br>
+<img src="src/main/resources/static/image/etc/check_id.PNG" width=500><br>
 
 🔍 로그인
 - Spring Security 적용
-<img src="src/main/webapp/resources/image/login.PNG" width=500><br><br>
+<img src="src/main/resources/static/image/etc/login.PNG" width=500><br><br>
 
 - ### 관리자 페이지
 - ID를 "admin"으로 로그인 시 관리자로 넘어가도록 설정
-<img src="src/main/webapp/resources/image/admin_login.PNG" width=500><br>
+<img src="src/main/resources/static/image/etc/admin_login.PNG" width=500><br>
+
+- "admin"이 아닌 다른 ID로 로그인 후 관리자 페이지 접근 시 접근 제한
+<img src="src/main/resources/static/image/etc/permission_denied.PNG" width=500><br>
 
 🔍 관리자 메인화면
 - 누적 방문자 수 및 상품, 주문, 회원 현황 요약 출력
-<img src="src/main/webapp/resources/image/admin_main1.PNG" width=400>
-<img src="src/main/webapp/resources/image/admin_main2.PNG" width=400><br><br>
+<img src="src/main/resources/static/image/etc/admin_main1.PNG" width=400>
+<img src="src/main/resources/static/image/etc/admin_main2.PNG" width=400><br><br>
 
 - ### 관리자 상품 관리
 🔍 상품 등록
 - Querydsl을 통한 상품 정보 저장
 - commons-io 라이브러리를 이용한 이미지 파일 업로드
-<img src="src/main/webapp/resources/image/admin_additem.PNG" width=500><br>
+<img src="src/main/resources/static/image/etc/admin_additem.PNG" width=500><br>
 
 🔍 상품 목록
 - Querydsl을 통한 동적 검색 기능
-<img src="src/main/webapp/resources/image/admin_itemlist.PNG" width=500><br>
+<img src="src/main/resources/static/image/etc/admin_itemlist.PNG" width=500><br>
 
 - 상품 상태 변경(판매, 품절) 및 삭제
-<img src="src/main/webapp/resources/image/admin_change_itemstatus.PNG" width=500><br><br>
+<img src="src/main/resources/static/image/etc/admin_change_itemstatus.PNG" width=500><br><br>
 
 - ### 관리자 주문 관리
 - Querydsl을 통한 동적 검색 기능
-<img src="src/main/webapp/resources/image/admin_order.PNG" width=500><br><br>
+<img src="src/main/resources/static/image/etc/admin_order.PNG" width=500><br><br>
 
 - ### 관리자 페이지
-<img src="src/main/webapp/resources/image/adminpage.PNG" width=500>
+<img src="src/main/resources/static/image/etc/adminpage.PNG" width=500>
 
 - ### 자동 완성 기능 
-<img src="src/main/webapp/resources/image/autosearch.PNG" width=500>
+<img src="src/main/resources/static/image/etc/autosearch.PNG" width=500>
 
 - ### 장바구니
-<img src="src/main/webapp/resources/image/putbasket.PNG" width=500>
-<img src="src/main/webapp/resources/image/basketpage.PNG" width=500>
+<img src="src/main/resources/static/image/etc/putbasket.PNG" width=500>
+<img src="src/main/resources/static/image/etc/basketpage.PNG" width=500>
 
 - ### 주문 기능
-<img src="src/main/webapp/resources/image/order1.PNG" width=500>
-<img src="src/main/webapp/resources/image/order2.PNG" width=500>
+<img src="src/main/resources/static/image/etc/order1.PNG" width=500>
+<img src="src/main/resources/static/image/etc/order2.PNG" width=500>
 
 
 </details>

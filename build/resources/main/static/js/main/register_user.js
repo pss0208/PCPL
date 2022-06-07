@@ -75,7 +75,7 @@ function sendit(){
 }
 
 $(function(){
-    //로그인 되어있는 경우면 인덱스로 튕겨내기
+    //로그인 되어있는 경우 메인화면으로 보내기
     if($('#loginTrue').val() == 'loginTrue'){
         location.href = '/main/index';
     }
