@@ -57,24 +57,25 @@
 <summary>서비스 및 기능</summary>
 
 
-- ### 메인 화면
+### 메인 화면
 - 주요 상품들로 carousel 구성하여 일정 시간마다 움직이도록 구현
-- 상품 사진 클릭 시 해당 상품의 상세 페이지로 이동
+- 상품 사진 클릭 시 해당 상품의 상세 페이지로 이동<br>
 <img src="src/main/resources/static/image/etc/main.PNG" width=500><br><br>
 
-- ### 회원가입 / 로그인
+### 회원가입 / 로그인
 🔍 회원가입
+<br>
 <img src="src/main/resources/static/image/etc/signup.PNG" width=500><br>
 
-- Ajax를 사용한 ID 중복확인 기능
-<img src="src/main/resources/static/image/etc/ajax.PNG" width=500><br>
+- Ajax를 사용한 ID 중복확인 기능<br>
+<img src="src/main/resources/static/image/etc/ajax.PNG" width=300><br>
 <img src="src/main/resources/static/image/etc/check_id.PNG" width=500><br>
 
 🔍 로그인
-- Spring Security 적용
-<img src="src/main/resources/static/image/etc/login.PNG" width=500><br><br>
+- Spring Security 적용<br>
+<img src="src/main/resources/static/image/etc/login.PNG" width=400><br><br>
 
-- ### 관리자 페이지
+### 관리자 페이지
 - ID를 "admin"으로 로그인 시 관리자로 넘어가도록 설정
 <img src="src/main/resources/static/image/etc/admin_login.PNG" width=500><br>
 
@@ -86,21 +87,21 @@
 <img src="src/main/resources/static/image/etc/admin_main1.PNG" width=400>
 <img src="src/main/resources/static/image/etc/admin_main2.PNG" width=400><br><br>
 
-- ### 관리자 상품 관리
+### 관리자 상품 관리
 🔍 상품 등록
 - Querydsl을 통한 상품 정보 저장
 - commons-io 라이브러리를 이용한 이미지 파일 업로드
 <img src="src/main/resources/static/image/etc/admin_additem.PNG" width=500><br>
 
 🔍 상품 목록
-- Querydsl을 통한 동적 검색 기능
+- Querydsl을 통한 동적 검색 기능<br>
 <img src="src/main/resources/static/image/etc/admin_itemlist.PNG" width=500><br>
 
-- 상품 상태 변경(판매, 품절) 및 삭제
+- 상품 상태 변경(판매, 품절) 및 삭제<br>
 <img src="src/main/resources/static/image/etc/admin_change_itemstatus.PNG" width=500><br><br>
 
-- ### 관리자 주문 관리
-- Querydsl을 통한 동적 검색 기능
+### 관리자 주문 관리
+- Querydsl을 통한 동적 검색 기능<br>
 <img src="src/main/resources/static/image/etc/admin_order.PNG" width=500><br><br>
 
 - ### 관리자 페이지
