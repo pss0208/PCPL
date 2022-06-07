@@ -1,5 +1,5 @@
 # 🏠 Page27 clone Project
- 교육용으로 제작한 page27 클론코딩 프로젝트<br>
+ 교육용으로 제작한 page27 쇼핑몰 클론코딩 프로젝트<br>
  
 
 ## 👋 Part 
@@ -36,6 +36,7 @@
 - Spring Security
 - QueryDsl
 - H2
+- gradle
 
 <br/>
 
@@ -54,19 +55,49 @@
 
 <details markdown="1">
 <summary>서비스 및 기능</summary>
-🔍🔍🔍🔍🔍🔍🔍🔍
+🔍🔍🔍🔍🔍🔍🔍
 
 - ### 메인 화면
-<img src="src/main/resources/static/image/etc/main.PNG" width=500>
 
-- ### 관리자 로그인 시 상단 메뉴
-<img src="src/main/webapp/resources/image/login_admin.PNG" width=500>
+<img src="src/main/resources/static/image/etc/main.PNG" width=500><br><br>
 
-- ### 회원 로그인 시 상단 메뉴
-<img src="src/main/webapp/resources/image/login_member.PNG" width=500>
+- ### 회원가입 / 로그인
+🔍 회원가입
+<img src="src/main/webapp/resources/image/signup.PNG" width=500><br>
 
-- ### 회원 마이 페이지
-<img src="src/main/webapp/resources/image/mypage.PNG" width=500>
+- Ajax를 사용한 ID 중복확인 기능
+<img src="src/main/webapp/resources/image/ajax.PNG" width=500><br>
+<img src="src/main/webapp/resources/image/check_id.PNG" width=500><br>
+
+🔍 로그인
+- Spring Security 적용
+<img src="src/main/webapp/resources/image/login.PNG" width=500><br><br>
+
+- ### 관리자 페이지
+- ID를 "admin"으로 로그인 시 관리자로 넘어가도록 설정
+<img src="src/main/webapp/resources/image/admin_login.PNG" width=500><br>
+
+🔍 관리자 메인화면
+- 누적 방문자 수 및 상품, 주문, 회원 현황 요약 출력
+<img src="src/main/webapp/resources/image/admin_main1.PNG" width=400>
+<img src="src/main/webapp/resources/image/admin_main2.PNG" width=400><br><br>
+
+- ### 관리자 상품 관리
+🔍 상품 등록
+- Querydsl을 통한 상품 정보 저장
+- commons-io 라이브러리를 이용한 이미지 파일 업로드
+<img src="src/main/webapp/resources/image/admin_additem.PNG" width=500><br>
+
+🔍 상품 목록
+- Querydsl을 통한 동적 검색 기능
+<img src="src/main/webapp/resources/image/admin_itemlist.PNG" width=500><br>
+
+- 상품 상태 변경(판매, 품절) 및 삭제
+<img src="src/main/webapp/resources/image/admin_change_itemstatus.PNG" width=500><br><br>
+
+- ### 관리자 주문 관리
+- Querydsl을 통한 동적 검색 기능
+<img src="src/main/webapp/resources/image/admin_order.PNG" width=500><br><br>
 
 - ### 관리자 페이지
 <img src="src/main/webapp/resources/image/adminpage.PNG" width=500>
@@ -96,13 +127,13 @@
 <img src="src/main/resources/static/image/etc/webcrawling_for.PNG" width=500>
 <br><br>
 
-- ### 문제 : 
+- ### 문제 : 크롤링 시 SQL문에서 에러가 발생함
 
 <img src="src/main/resources/static/image/etc/error.PNG" width=500>
 <br>
 
-- ### 원인 : 크롤링해오는 값이 없을 경우 null로 들어가지 않고 뒤에 텍스트까지 같이 크롤링을 해서 저장범위를 넘어감
-- ### 해결 : if문으로 값이 있는 경우에만 크롤링하도록 처리
+- ### 원인 : 크롤링해오는 값이 없을 경우 값이 null로 들어가지 않고 뒤에 텍스트까지 같이 크롤링을 해서 저장범위를 넘어감
+- ### 해결 : 변수의 값을 null로 초기화하고 if문으로 값이 있는 경우에만 크롤링하도록 처리
 
 <img src="src/main/resources/static/image/etc/solution.PNG" width=500>
 
