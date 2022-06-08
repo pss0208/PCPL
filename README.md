@@ -50,7 +50,7 @@
 
 <br/>
 
-## 데이터베이스 ERD
+## 📝 데이터베이스 ERD
 
 <img src="src/main/resources/static/image/etc/erd.JPG" width=500><br><br>
 
