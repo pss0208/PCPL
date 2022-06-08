@@ -52,7 +52,7 @@
 
 ## 데이터베이스 ERD
 
-<img src="src/main/resources/static/image/etc/erd.jpg" width=500><br><br>
+<img src="src/main/resources/static/image/etc/erd.JPG" width=500><br><br>
 
 
 ## 📸 서비스 및 기능
